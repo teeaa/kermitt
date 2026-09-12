@@ -7,7 +7,9 @@ import (
 	"log/slog"
 	"os"
 	"path/filepath"
+	"runtime"
 	goRuntime "runtime"
+	"strings"
 	"sync"
 
 	"github.com/teeaa/kermitt/pkg/ipc"
@@ -39,7 +41,7 @@ func getWindowConfigPath() string {
 		return "window-state.json"
 	}
 	dir := filepath.Join(configDir, "kermitt")
-	_ = os.MkdirAll(dir, 0755)
+	_ = os.MkdirAll(dir, 0o755)
 	return filepath.Join(dir, "window.json")
 }
 
@@ -63,13 +65,16 @@ func saveWindowSize(w, h int) {
 	path := getWindowConfigPath()
 	cfg := WindowConfig{Width: w, Height: h}
 	data, _ := json.MarshalIndent(cfg, "", "  ")
-	_ = os.WriteFile(path, data, 0644)
+	_ = os.WriteFile(path, data, 0o644)
 }
 
 func main() {
 	// Initialize standard log/slog logger writing to os.Stdout and in-memory ring buffer
 	logger.InitDefaultLogger()
 	slog.Debug("Starting Kermitt application...")
+
+	// Fix PATH for macOS
+	fixPath()
 
 	// Create an instance of the app structure
 	app := NewApp()
@@ -228,5 +233,17 @@ func main() {
 	})
 	if err != nil {
 		println("Error:", err.Error())
+	}
+}
+
+func fixPath() {
+	if runtime.GOOS == "darwin" {
+		extraPaths := []string{
+			"/usr/local/bin",
+			"/opt/homebrew/bin",
+			"/opt/homebrew/sbin",
+		}
+		currentPath := os.Getenv("PATH")
+		os.Setenv("PATH", strings.Join(extraPaths, ":")+":"+currentPath)
 	}
 }

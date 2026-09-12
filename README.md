@@ -25,6 +25,17 @@
 - Change the font and size in logs
 - Customise the status bar columns
 
+## Fixing security issue on MacOS
+
+Since the application package is not signed and signing it costs a bundle you will see this error when running the app on MacOS
+
+<img width="257" height="245" alt="Screenshot 2026-09-12 at 12 49 01" src="https://github.com/user-attachments/assets/81a2b975-18b2-414f-9175-509b9729f004" />
+
+To fix it:
+1. Click `Done`
+2. Go to Settings / Privacy & Security
+3. Scroll down until you see `kermitt.app` and choose "Run anyway"
+
 ## Running the `dev` version
 
 If you have an error or want to see the console logs the best way to accomplish this is by running the development version of Kermitt.

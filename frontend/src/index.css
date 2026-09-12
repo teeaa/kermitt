@@ -1,0 +1,304 @@
+/* Base fallback / Kermitt Slate & Emerald (Default Dark) */
+:root, [data-theme="kermitt"] {
+  --bg-app: #080c14;
+  --bg-surface: #0f172a;
+  --bg-surface-hover: #1e293b;
+  --bg-surface-active: #243047;
+  --border-subtle: #1e293b;
+  --border-strong: #334155;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent-primary: #10b981;
+  --accent-secondary: #06b6d4;
+  --accent-glow: rgba(16, 185, 129, 0.15);
+  --terminal-bg: #05080f;
+
+  /* Log Typography & App Zoom Defaults */
+  --log-font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --log-font-size: 12px;
+  --app-zoom: 1.0;
+
+  /* Tailwind Color Token Overrides for Slate & Zinc */
+  --color-slate-950: var(--bg-app);
+  --color-slate-900: var(--bg-surface);
+  --color-slate-800: var(--bg-surface-hover);
+  --color-slate-700: var(--border-strong);
+  --color-slate-600: var(--border-subtle);
+  --color-slate-500: var(--text-dim);
+  --color-slate-400: var(--text-muted);
+  --color-slate-300: var(--text-muted);
+  --color-slate-200: var(--text-main);
+  --color-slate-100: var(--text-main);
+
+  --color-zinc-950: var(--bg-app);
+  --color-zinc-900: var(--bg-surface);
+  --color-zinc-800: var(--bg-surface-hover);
+  --color-zinc-700: var(--border-subtle);
+  --color-zinc-600: var(--border-strong);
+  --color-zinc-500: var(--text-dim);
+  --color-zinc-400: var(--text-muted);
+  --color-zinc-300: var(--text-main);
+  --color-zinc-200: var(--text-main);
+  --color-zinc-100: var(--text-main);
+
+  --color-cyan-300: #67e8f9;
+  --color-cyan-400: var(--accent-secondary);
+  --color-cyan-500: var(--accent-secondary);
+  --color-cyan-950: rgba(6, 182, 212, 0.15);
+}
+
+/* Pure Light Mode */
+[data-theme="light"] {
+  --bg-app: #f1f5f9;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f8fafc;
+  --bg-surface-active: #e2e8f0;
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #94a3b8;
+  --accent-primary: #059669;
+  --accent-secondary: #0284c7;
+  --accent-glow: rgba(5, 150, 105, 0.12);
+  --terminal-bg: #1e293b; /* Maintain dark console for contrast */
+
+  /* Tailwind Color Token Overrides for Slate & Zinc */
+  --color-slate-950: var(--bg-app);
+  --color-slate-900: var(--bg-surface);
+  --color-slate-800: var(--bg-surface-active);
+  --color-slate-700: var(--border-strong);
+  --color-slate-600: var(--border-subtle);
+  --color-slate-500: var(--text-dim);
+  --color-slate-400: var(--text-muted);
+  --color-slate-300: var(--text-muted);
+  --color-slate-200: var(--text-main);
+  --color-slate-100: var(--text-main);
+
+  --color-zinc-950: var(--bg-app);
+  --color-zinc-900: var(--bg-surface);
+  --color-zinc-800: var(--bg-surface-active);
+  --color-zinc-700: var(--border-subtle);
+  --color-zinc-600: var(--border-strong);
+  --color-zinc-500: var(--text-dim);
+  --color-zinc-400: var(--text-muted);
+  --color-zinc-300: var(--text-main);
+  --color-zinc-200: var(--text-main);
+  --color-zinc-100: var(--text-main);
+
+  --color-cyan-300: var(--accent-secondary);
+  --color-cyan-400: var(--accent-secondary);
+  --color-cyan-500: var(--accent-secondary);
+  --color-cyan-950: var(--bg-surface-active);
+}
+
+/* Catppuccin Mocha */
+[data-theme="catppuccin"] {
+  --bg-app: #11111b;       /* Crust */
+  --bg-surface: #181825;   /* Mantle */
+  --bg-surface-hover: #313244; /* Surface0 */
+  --bg-surface-active: #45475a;
+  --border-subtle: #313244;
+  --border-strong: #585b70;
+  --text-main: #cdd6f4;    /* Text */
+  --text-muted: #a6adc8;   /* Subtext0 */
+  --text-dim: #6c7086;     /* Overlay0 */
+  --accent-primary: #89b4fa; /* Blue */
+  --accent-secondary: #cba6f7; /* Mauve */
+  --accent-glow: rgba(137, 180, 250, 0.15);
+  --terminal-bg: #11111b;
+
+  /* Tailwind Color Token Overrides for Slate & Zinc */
+  --color-slate-950: var(--bg-app);
+  --color-slate-900: var(--bg-surface);
+  --color-slate-800: var(--bg-surface-hover);
+  --color-slate-700: var(--border-strong);
+  --color-slate-600: var(--border-subtle);
+  --color-slate-500: var(--text-dim);
+  --color-slate-400: var(--text-muted);
+  --color-slate-300: var(--text-muted);
+  --color-slate-200: var(--text-main);
+  --color-slate-100: var(--text-main);
+
+  --color-zinc-950: var(--bg-app);
+  --color-zinc-900: var(--bg-surface);
+  --color-zinc-800: var(--bg-surface-hover);
+  --color-zinc-700: var(--border-subtle);
+  --color-zinc-600: var(--border-strong);
+  --color-zinc-500: var(--text-dim);
+  --color-zinc-400: var(--text-muted);
+  --color-zinc-300: var(--text-main);
+  --color-zinc-200: var(--text-main);
+  --color-zinc-100: var(--text-main);
+
+  --color-cyan-300: var(--accent-secondary);
+  --color-cyan-400: var(--accent-secondary);
+  --color-cyan-500: var(--accent-secondary);
+  --color-cyan-950: rgba(203, 166, 247, 0.15);
+}
+
+/* Tokyo Night */
+[data-theme="tokyo-night"] {
+  --bg-app: #16161e;
+  --bg-surface: #1a1b26;
+  --bg-surface-hover: #24283b;
+  --bg-surface-active: #2f354f;
+  --border-subtle: #292e42;
+  --border-strong: #414868;
+  --text-main: #c0caf5;
+  --text-muted: #9aa5ce;
+  --text-dim: #565f89;
+  --accent-primary: #7aa2f7;
+  --accent-secondary: #7dcfff;
+  --accent-glow: rgba(122, 162, 247, 0.15);
+  --terminal-bg: #13141c;
+
+  /* Tailwind Color Token Overrides for Slate & Zinc */
+  --color-slate-950: var(--bg-app);
+  --color-slate-900: var(--bg-surface);
+  --color-slate-800: var(--bg-surface-hover);
+  --color-slate-700: var(--border-strong);
+  --color-slate-600: var(--border-subtle);
+  --color-slate-500: var(--text-dim);
+  --color-slate-400: var(--text-muted);
+  --color-slate-300: var(--text-muted);
+  --color-slate-200: var(--text-main);
+  --color-slate-100: var(--text-main);
+
+  --color-zinc-950: var(--bg-app);
+  --color-zinc-900: var(--bg-surface);
+  --color-zinc-800: var(--bg-surface-hover);
+  --color-zinc-700: var(--border-subtle);
+  --color-zinc-600: var(--border-strong);
+  --color-zinc-500: var(--text-dim);
+  --color-zinc-400: var(--text-muted);
+  --color-zinc-300: var(--text-main);
+  --color-zinc-200: var(--text-main);
+  --color-zinc-100: var(--text-main);
+
+  --color-cyan-300: var(--accent-secondary);
+  --color-cyan-400: var(--accent-secondary);
+  --color-cyan-500: var(--accent-secondary);
+  --color-cyan-950: rgba(125, 207, 255, 0.15);
+}
+
+/* Nord */
+[data-theme="nord"] {
+  --bg-app: #242933;       /* Polar Night */
+  --bg-surface: #2e3440;
+  --bg-surface-hover: #3b4252;
+  --bg-surface-active: #434c5e;
+  --border-subtle: #3b4252;
+  --border-strong: #4c566a;
+  --text-main: #eceff4;    /* Snow Storm */
+  --text-muted: #d8dee9;
+  --text-dim: #9aa3b2;
+  --accent-primary: #88c0d0; /* Frost */
+  --accent-secondary: #81a1c1;
+  --accent-glow: rgba(136, 192, 208, 0.15);
+  --terminal-bg: #1e222a;
+
+  /* Tailwind Color Token Overrides for Slate & Zinc */
+  --color-slate-950: var(--bg-app);
+  --color-slate-900: var(--bg-surface);
+  --color-slate-800: var(--bg-surface-hover);
+  --color-slate-700: var(--border-strong);
+  --color-slate-600: var(--border-subtle);
+  --color-slate-500: var(--text-dim);
+  --color-slate-400: var(--text-muted);
+  --color-slate-300: var(--text-muted);
+  --color-slate-200: var(--text-main);
+  --color-slate-100: var(--text-main);
+
+  --color-zinc-950: var(--bg-app);
+  --color-zinc-900: var(--bg-surface);
+  --color-zinc-800: var(--bg-surface-hover);
+  --color-zinc-700: var(--border-subtle);
+  --color-zinc-600: var(--border-strong);
+  --color-zinc-500: var(--text-dim);
+  --color-zinc-400: var(--text-muted);
+  --color-zinc-300: var(--text-main);
+  --color-zinc-200: var(--text-main);
+  --color-zinc-100: var(--text-main);
+
+  --color-cyan-300: var(--accent-primary);
+  --color-cyan-400: var(--accent-primary);
+  --color-cyan-500: var(--accent-primary);
+  --color-cyan-950: rgba(136, 192, 208, 0.15);
+}
+
+/* Dracula */
+[data-theme="dracula"] {
+  --bg-app: #1e1f29;
+  --bg-surface: #282a36;
+  --bg-surface-hover: #383a59;
+  --bg-surface-active: #44475a;
+  --border-subtle: #44475a;
+  --border-strong: #6272a4;
+  --text-main: #f8f8f2;
+  --text-muted: #bd93f9;
+  --text-dim: #6272a4;
+  --accent-primary: #bd93f9;
+  --accent-secondary: #ff79c6;
+  --accent-glow: rgba(189, 147, 249, 0.15);
+  --terminal-bg: #191a21;
+
+  /* Tailwind Color Token Overrides for Slate & Zinc */
+  --color-slate-950: var(--bg-app);
+  --color-slate-900: var(--bg-surface);
+  --color-slate-800: var(--bg-surface-hover);
+  --color-slate-700: var(--border-strong);
+  --color-slate-600: var(--border-subtle);
+  --color-slate-500: var(--text-dim);
+  --color-slate-400: var(--text-muted);
+  --color-slate-300: var(--text-muted);
+  --color-slate-200: var(--text-main);
+  --color-slate-100: var(--text-main);
+
+  --color-zinc-950: var(--bg-app);
+  --color-zinc-900: var(--bg-surface);
+  --color-zinc-800: var(--bg-surface-hover);
+  --color-zinc-700: var(--border-subtle);
+  --color-zinc-600: var(--border-strong);
+  --color-zinc-500: var(--text-dim);
+  --color-zinc-400: var(--text-muted);
+  --color-zinc-300: var(--text-main);
+  --color-zinc-200: var(--text-main);
+  --color-zinc-100: var(--text-main);
+
+  --color-cyan-300: var(--accent-secondary);
+  --color-cyan-400: var(--accent-secondary);
+  --color-cyan-500: var(--accent-secondary);
+  --color-cyan-950: rgba(255, 121, 198, 0.15);
+}
+
+/* Semantic Utility Classes */
+.bg-app { background-color: var(--bg-app); }
+.bg-surface { background-color: var(--bg-surface); }
+.bg-surface-hover, .hover\:bg-surface-hover:hover { background-color: var(--bg-surface-hover); }
+.bg-surface-active { background-color: var(--bg-surface-active); }
+.bg-terminal { background-color: var(--terminal-bg); }
+
+.border-subtle, .border-border-subtle { border-color: var(--border-subtle); }
+.border-strong, .border-border-strong { border-color: var(--border-strong); }
+.focus\:border-accent-primary:focus { border-color: var(--accent-primary); }
+
+.text-main, .text-content-main { color: var(--text-main); }
+.text-muted, .text-content-muted { color: var(--text-muted); }
+.text-dim, .text-content-dim { color: var(--text-dim); }
+.text-accent-primary, .hover\:text-accent-primary:hover { color: var(--accent-primary); }
+.text-accent-secondary { color: var(--accent-secondary); }
+
+/* Global App Container */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
